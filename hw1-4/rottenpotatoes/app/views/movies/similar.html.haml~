@@ -1,0 +1,8 @@
+-# in app/views/movies/similar.html.haml
+
+%h2 Director #{@movies[0].director}'s movies
+%ul#details
+  - @movies.each do |movie|
+    %li
+      = @movie.title
+
